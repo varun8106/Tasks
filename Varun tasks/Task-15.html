@@ -1,0 +1,181 @@
+<!-- Time table -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 15</title>
+    <style>
+
+        #content {
+            width: 1000px;
+            height: 700px;
+            position: relative;
+            left: 280px;
+        }
+
+        table {
+            font-family: Arial;
+            width: 780px;
+            border: 2px solid black;
+            border-collapse: collapse;
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+
+        th {
+            border: 2px solid black;
+            background-color: rgb(168, 168, 168);
+            font-weight: 800;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        td {
+            border: 1.5px solid black;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        #lunch {
+            width: 45px;
+        }
+
+        #sveclogo {
+            display: inline-block;
+            position: relative;
+            top: 15px;
+            left: 35px;
+        }
+
+        #svecname {
+            display: inline-block;
+            font-size: 20px;
+            text-align: center;
+            line-height: 6px;
+            position: relative;
+            left: 25px;
+        }
+
+        #dept {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 800;
+            text-align: center;
+            line-height: 9px;
+            position: relative;
+            left: 150px;
+        }
+
+        #roomno {
+            display: inline-block;
+            font-size: 19px;
+            font-weight: 800;
+            position: relative;
+            top: 40px;
+            right: 550px;
+        }
+
+        #date {
+            display: inline-block;
+            font-size: 19px;
+            font-weight: 800;
+            position: relative;
+            top: 40px;
+            right: 45px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <div id="sveclogo">
+            <img src="svec logo.png" alt="SVEC">
+        </div>
+
+        <div id="svecname">
+            <p>SREE VIDYANIKETHAN ENGINEERING COLLEGE</p>
+            <p>(AUTONOMOUS)</p>
+            <p>Sree Sainath Nagar, Tirupati - 517102</p>
+        </div>
+
+        <div id="dept">
+            <p><u>DEPARTMENT OF COMPUTER SCIENCE AND SYSTEMS ENGINEERING</u></p>
+            <p><u>CLASS WORK TIME TABLE (2023-2024)</u></p>
+            <p>III B.Tech II Semester (CSSE-A)</p>
+        </div>
+
+        <div id="roomno">
+            <p>Room No.: 611</p>
+        </div>
+
+        <div id="date">
+            <p>W.E.F: 18.12.2023</p>
+        </div>
+        
+    <table>
+        <tr>
+            <th>DAY/<br>HR</th>
+            <th>10:30AM<br> TO<br> 11:20AM</th>
+            <th>11:20AM<br> TO<br> 12:10PM</th>
+            <th>12:10PM<br> TO<br> 01:00PM</th>
+            <th id="lunch" rowspan="6">L<br>U<br>N<br>C<br>H<br><br>B<br>R<br>E<br>A<br>K</th>
+            <th>02:15PM<br> TO<br> 03:05PM</th>
+            <th>03:05PM<br> TO<br> 03:55PM</th>
+            <th>03:55PM<br> TO<br> 04:45PM</th>
+        </tr>
+
+        <tr>
+            <th>MON</th>
+            <td>WT</td>
+            <td>LIB</td>
+            <td>IS</td>
+            <td>IoT</td>
+            <td>AWSN</td>
+            <td>PBEA</td>
+        </tr>
+
+        <tr>
+            <th>TUE</th>
+            <td colspan="3">WT LAB<br> Room No: 510</td>
+            <td>FoE</td>
+            <td>ML</td>
+            <td>IS</td>
+        </tr>
+
+        <tr>
+            <th>WED</th>
+            <td colspan="3">ML LAB<br> Room No: E</td>
+            <td>WT</td>
+            <td>AWSN</td>
+            <td>ML</td>
+        </tr>
+
+        <tr>
+            <th>THU</th>
+            <td>IoT</td>
+            <td>PBEA</td>
+            <td>WT</td>
+            <td>ML</td>
+            <td>IS</td>
+            <td>FoE</td>
+        </tr>
+
+        <tr>
+            <th>FRI</th>
+            <td colspan="3">DAD LAB<br> Room No: 408-A</td>
+            <td>IoT</td>
+            <td>AWSN</td>
+            <td>PBEA</td>
+        </tr>
+
+        
+    </table>
+    </div>
+
+</body>
+</html>

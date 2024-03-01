@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+
+        fieldset {
+            margin-top: 40px;
+            padding-top: 30px;
+            width: 700px;
+            position: relative;
+            left: 400px;
+        }
+
+        legend {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .box {
+            width: 190px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 15px;
+            border: 2px solid rgb(172, 172, 172);
+            border-radius: 3px;
+            position: relative;
+            bottom: 2px;
+        }
+
+        #pos1 {
+            display: inline-block;
+            margin-left: 40px;
+            margin-bottom: 40px;
+        }
+
+        #pos2 {
+            display: inline-block;
+            margin-left: 195px;
+            margin-bottom: 40px;
+        }
+
+        .dob {
+            position: relative;
+            left: 70px;
+        }
+
+        #branch {
+            display: inline-block;
+            margin-left: 210px;
+        }
+
+        #certifications {
+            display: inline-block;
+            margin-left: 40px;
+            position: relative;
+            bottom: 132px;
+        }
+
+        #achievements {
+            display: inline-block;
+            margin-left: 145px;
+        }
+
+        #achievements-text {
+            padding-left: 10px;
+            font-size: 15px;
+        }
+
+        #submit {
+            text-align: center;
+            height: 50px;
+        }
+
+        #submit-button {
+            width: 200px;
+            height: 45px;
+            font-size: 18px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <form action="">
+
+            <div id="pos1">
+                <p>First Name</p>
+                <input type="text" class="box" placeholder="Enter your first name">
+            </div>
+
+            <div id="pos2">
+                <p>Last Name</p>
+                <input type="text" class="box" placeholder="Enter your last name">
+            </div>
+
+            <div id="pos1">
+                <p>Email</p>
+                <input type="email" class="box" placeholder="Enter your email">
+            </div>
+
+            <div id="pos2">
+                <p>Roll Number</p>
+                <input type="text" class="box" placeholder="Enter your roll number">
+            </div>
+
+            <div id="pos1">
+                <p>Gender</p>
+                <label for="gender1"><input type="radio" name="gender" id="gender1">Male</label>
+                <label for="gender2"><input type="radio" name="gender" id="gender2">Female</label>
+            </div>
+
+            <div id="pos2" class="dob">
+                <p>Date of Birth</p>
+                <input type="date" class="box">
+            </div>
+
+            <div id="pos1"> 
+                <p>Address</p>
+                <input type="text" class="box" placeholder="Enter your address">
+            </div>
+
+            <div id="pos2">
+                <p>Phone Number</p>
+                <input type="number" class="box" placeholder="Enter your number">
+            </div>
+
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Education Details</legend>
+        <form action="">
+            <div id="pos1">
+                <p>School Name</p>
+                <input type="text" class="box" placeholder="Enter your School name">
+            </div>
+
+            <div id="pos2">
+                <p>College Name</p>
+                <input type="text" class="box" placeholder="Enter your College name">
+            </div>
+
+            <div id="pos1">
+                <p>Degree</p>
+                <select name="degree" class="box" style="font-style:italic">
+                    <option value="select">select</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="MBA">MBA</option>
+                </select>
+            </div>
+
+            <div id="branch">
+                <p>Branch</p>
+                <select name="branch" class="box" style="font-style:italic">
+                    <option value="select">select</option>
+                    <option value="CSSE">CSSE</option>
+                    <option value="CSE">CSE</option>
+                    <option value="CS">CS</option>
+                    <option value="CSD">CSD</option>
+                </select>
+            </div>
+
+            <div id="pos1">
+                <p>Graduation Date</p>
+                <input type="date" class="box">
+            </div>
+
+            <div id="pos2">
+                <p>CGPA</p>
+                <input type="number" class="box" placeholder="Enter your CGPA">
+            </div>
+
+            <div id="certifications">
+                <p>Certifications</p>
+                <input type="file" >
+            </div>
+
+            <div id="achievements">
+                <p>Achievements</p>
+                <textarea name="achievements" id="achievements-text" cols="23" rows="8" placeholder="Enter your achievements here"></textarea>
+            </div>
+
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Skills & Others</legend>
+        <form action="">
+
+            <div id="pos1">
+                <p>Skill</p>
+                <select name="skill" class="box" style="font-style:italic">
+                    <option value="select">select</option>
+                    <option value="HTML">HTML</option>
+                    <option value="Java">Java</option>
+                    <option value="DSA">DSA</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+
+            <div id="branch">
+                <p>Experience</p>
+                <select name="experience" class="box" style="font-style:italic">
+                    <option value="select">select</option>
+                    <option value="1 year or less">1 year or less</option>
+                    <option value="More than 1 year & less than 2 years">More than 1 year & less than 2 years</option>
+                    <option value="More than 2 years & less than 3 years">More than 2 years & less than 3 years</option>
+                    <option value="More than 3 years">More than 3 years</option>
+                </select>
+            </div>
+
+            <div id="pos1">
+                <p>Hobbies</p>
+                <textarea name="hobbies" id="achievements-text" cols="23" rows="8" placeholder="Enter your hobbies here"></textarea>
+            </div>
+
+            <div id="pos2">
+                <p>Interests</p>
+                <textarea name="interests" id="achievements-text" cols="23" rows="8" placeholder="Enter your interests here"></textarea>
+            </div>
+
+        </form>
+    </fieldset> <br><br>
+
+    <div id="submit">
+        <button id="submit-button">Submit</button>
+    </div>
+
+    <br><br><br><br>
+</body>
+</html>

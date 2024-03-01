@@ -1,0 +1,306 @@
+<!-- Registration Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <style>
+        #video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        * {
+            font-family: Arial;
+        }
+
+        #position1 {
+            background-color: #FFFF;
+            display: inline-block;
+            width: 730px;
+            height: 1250px;
+            position:absolute;
+            left: 650px;
+            margin-top: 50px;
+            margin-bottom: 500px;
+            border-radius: 15px;
+            border: 5px solid white;
+            background-color: black;
+            color: white;
+        }
+
+        #mbu{
+            display: inline-block;
+            position: relative;
+            top: 350px;
+            left: 180px;
+            width: 250px;
+            border: 8px solid white;
+            border-radius: 80%;
+            border-top: 6px solid black;
+            border-left: 6px solid red;
+            border-right: 6px solid yellow;
+            border-bottom: 6px solid magenta;
+            animation: rotatembu 15s ease-in 0s infinite normal;
+        }
+
+        form{
+            padding-top: 25px;
+        }
+
+        fieldset {
+            width: 700px;
+            height: 1300px;
+            border-color: transparent;
+        }
+
+        .flex1 {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .flex2 {
+            display: inline-block        ;
+            margin-left: 195px;
+        }
+
+        .box {
+            width: 200px;
+            height: 40px;
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+
+        input {
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+        .box:hover {
+            border: 3px solid magenta;
+        }
+
+        #fullname {
+            margin-bottom: 40px;
+        }
+
+        #email {
+            margin-bottom: 40px;
+        }
+
+        #Password {
+            margin-bottom: 40px;
+        }
+
+        #dob {
+            margin-bottom: 10px;
+        }
+
+        #Gender {
+            margin-left: 40px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        #gender11 {
+            margin-right: 30px;
+            font-size: 17.5px;
+        }
+
+        #gender12 {
+            margin-right: 30px;
+            font-size: 17.5px;
+        }
+
+        #gender13 {
+            font-size: 17.5px;
+        }
+
+        #address {
+            margin-bottom: 40px;
+        }
+
+        #pin {
+            display: inline-block;
+            bottom: 10px;
+            margin-bottom: 40px;
+        }
+
+        #register {
+            width: 600px;
+            height: 45px;
+            margin-left: 50px;
+            font-size: 20px;
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+
+        @keyframes rotatembu {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        #register:hover {
+            border: 3.2px solid magenta;   
+        }
+
+        #c1 {
+            margin-right: 30px;
+            font-size: 17.5px;
+        }
+
+        #c2 {
+            margin-right: 30px;
+            font-size: 17.5px;
+        }
+
+        #c3 {
+            font-size: 17.5px;
+        }
+
+        .c11 {
+            margin-left: 38px;
+        }
+
+        .c12 {
+            margin-left: 17px;
+        }
+
+        .c13 {
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .c14 {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        #year {
+            position: relative;
+            left: 260px;
+            bottom: 130px;
+        }
+
+        select {
+            font-style: italic;
+            color: rgb(112, 112, 112);
+            padding-left: 8px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <video id="video" src="/video (2160p).mp4"  autoplay loop></video> 
+
+    
+        <img id="mbu" src="mbu.png" alt="MBU">
+
+    <div id="position1">
+    <fieldset>
+    <form action="">
+        <h1 align="center"><u>Registration Form</u></h1><br><br>
+
+        <div id="fullname" class="flex1" id="flex3">
+            <p>Full Name</p>
+            <input type="text" placeholder="Enter your name" class="box" required>
+        </div>
+
+        <div id="username" class="flex2" id="flex3">
+            <p>Username</p>
+            <input type="text" placeholder="Enter your username" class="box" required>
+        </div>
+
+        <div id="email" class="flex1" class="flex4">
+            <p>Email</p>
+            <input type="email" placeholder="Enter your email" class="box" required>
+        </div>
+
+        <div id="roll" class="flex2" class="flex4">
+            <p>Roll Number</p>
+            <input type="text" placeholder="Enter your roll number" class="box" required>
+        </div>
+
+        <div id="Password" class="flex1" class="flex5">
+            <p>Password</p>
+            <input type="password" placeholder="Enter your password" class="box" required>
+        </div>
+
+        <div id="ConfirmPassword" class="flex2" class="flex5">
+            <p>Confirm Password</p>
+            <input type="password" placeholder="Confirm your password" class="box" required>
+        </div>
+
+        <div id="dob" class="flex1" class="flex5">
+            <p>Date of Birth</p>
+            <input type="date" class="box" required>
+        </div>
+
+        <div id="Phone" class="flex2" class="flex4">
+            <p>Phone Number</p>
+            <input type="tel" placeholder="Enter your number" class="box" required>
+        </div>
+
+        <div id="Gender">
+            <p>Gender</p>
+            <span id="gender11"><label for="gender1"><input type="radio" name="gender" value="Male" id="gender1">Male</label></span>
+            <span id="gender12"><label for="gender2"><input type="radio" name="gender" value="Female" id="gender2">Female</label></span>
+            <label for="gender3"><input type="radio" name="gender" value="Prefer not to say" id="gender3">Prefer not to say</label>
+        </div>
+
+        <div id="address" class="flex1" class="flex5">
+            <p>Address</p>
+            <input type="text" placeholder="Enter your address" class="box" required>
+        </div>
+
+        <div id="pin" class="flex2" class="flex4">
+            <p>Pin Code</p>
+            <input type="number" placeholder="Enter the pin code" class="box" required>
+        </div>
+
+        <div id="course" class="flex1" class="flex5">
+            <p>Select Courses</p>
+            <div class="c14"><span id="c1"><label for="course1"><input type="checkbox" name="course" id="course1">C</label></span>
+            <span id="c2" class="c11"><label for="course2"><input type="checkbox" name="course" id="course2">Java</label></span>
+            <span id="c3" class="c12"><label for="course3"><input type="checkbox" name="course" id="course3">DSA</label></span></div><br>
+            <div class="c13">
+            <span id="c1"><label for="course4"><input type="checkbox" name="course" id="course4">DBMS</label></span>
+            <span id="c2"><label for="course5"><input type="checkbox" name="course" id="course5">Python</label></span>
+            <span id="c3"><label for="course6"><input type="checkbox" name="course" id="course6">WT</label></span>
+        </div>
+        </div>
+
+        <div id="year" class="flex2" class="flex4">
+        <p>Year &amp; Semester</p>
+        <select name="year" class="box" required>
+            <option value="select">select</option>
+            <option value="I Year I Semester">I Year I Semester</option>
+            <option value="I Year II Semester">I Year II Semester</option>
+            <option value="II Year I Semester">II Year I Semester</option>
+            <option value="II Year II Semester">II Year II Semester</option>
+            <option value="III Year I Semester">III Year I Semester</option>
+            <option value="III Year II Semester">III Year II Semester</option>
+            <option value="IV Year I Semester">IV Year I Semester</option>
+            <option value="IV Year II Semester">IV Year II Semester</option>
+        </select>
+        </div>
+        
+        <!-- <input type="submit" id="register" value="Register"> -->
+        <button id="register" onclick="alert('Registered Successfully')">Register</button>
+    </form>
+    </fieldset>
+    </div>
+
+</body>
+</html>

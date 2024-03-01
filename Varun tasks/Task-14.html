@@ -1,0 +1,132 @@
+<!-- Survey Form -->
+
+<!-- FeedBack Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 14</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+
+        #content {
+            margin-left: 20px;
+        }
+
+        fieldset {
+            width: 550px;
+            height: 1400px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            padding-top: 10px;
+            position: relative;
+            left: 480px;
+            border-radius: 8px;
+        }
+
+        .box {
+            width: 200px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 15px;
+            margin-bottom: 20px;
+            position: relative;
+            bottom: 4px;
+            border: 1.5px solid grey;
+            border-radius: 4px;
+        }
+
+        #pos1 {
+            margin-bottom: 12px;
+        }
+
+        #submit {
+            width: 250px;
+            height: 45px;
+            position: relative;
+            top: 10px;
+            left: 150px;
+            border: 2px solid grey;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    
+    <fieldset>
+        <form action="#">
+            <h1 align="center">Survey Form</h1> <br>
+
+            <div id="content">
+            <div>
+                <p>Full Name</p>
+                <input type="text" class="box" placeholder="Enter your full name">
+            </div>
+
+            <div>
+                <p>Email</p>
+                <input type="email" class="box" placeholder="Enter your email">
+            </div>
+
+            <div>
+                <p>Age</p>
+                <input type="number" class="box" placeholder="Enter your age">
+            </div>
+
+            <div>
+                <p>Phone Number</p>
+                <input type="number" class="box" placeholder="Enter your number">
+            </div>
+
+            <div>
+                <p>Gender</p>
+                <label for="male"><input type="radio" name="gender" id="male">Male</label>
+                <label for="female"><input type="radio" name="gender" id="female">Female</label>
+            </div> <br>
+
+            <div>
+                <p>What products you brought ? (Check all that apply)</p>
+                <div id="pos1"><label for="pro1"><input type="checkbox" name="product" id="pro1"> Facewash</label></div>
+                <div id="pos1"><label for="pro2"><input type="checkbox" name="product" id="pro2"> Soap</label></div>
+                <div id="pos1"><label for="pro3"><input type="checkbox" name="product" id="pro3"> Shampoo</label></div>
+                <div id="pos1"><label for="pro4"><input type="checkbox" name="product" id="pro4"> Powder</label></div>
+                <div id="pos1"><label for="pro5"><input type="checkbox" name="product" id="pro5"> Sanitizer</label></div>
+                <div id="pos1"><label for="pro6"><input type="checkbox" name="product" id="pro6"> Sun Screen</label></div>
+            </div> <br>
+
+            <div>
+                <p>Would you recommend the products to others ?</p>
+                <label for="yes"><input type="radio" name="review1" id="yes">Yes</label>
+                <label for="no"><input type="radio" name="review1" id="no">No</label>
+            </div> <br>
+
+            <div>
+                <p>How do you rate your overall experience ?</p>
+                <label for="bad"><input type="radio" name="review2" id="bad">Bad</label>
+                <label for="average"><input type="radio" name="review2" id="average">Average</label>
+                <label for="good"><input type="radio" name="review2" id="good">Good</label>
+                <label for="excellent"><input type="radio" name="review2" id="excellent">Excellent</label>
+            </div> <br>
+
+            <div>
+                <p>Any other comments</p>
+                <textarea name="comments" id="" cols="25" rows="8" placeholder="Enter your comments here"></textarea>
+            </div><br><br>
+
+        </div>
+
+        <button id="submit" onclick="alert('Submitted successfully')">Submit</button>
+
+        </form>
+    </fieldset>
+
+</body>
+</html>
